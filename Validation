@@ -1,0 +1,22 @@
+#range check
+validNum=False
+while validNum==False:
+ num=int(input("Enter a number between 1 and 10: "))
+ if (num>=1) and (num<=10):
+   validNum=True
+   print("You have entered:", num)
+
+
+#prescence check
+userName=''
+while userName=='':
+  userName=str(input("Enter a username: "))
+print("Hello", userName)
+
+#length check
+password=str(input("Enter your password: "))
+len_password=len(password)
+if len_password>=6 or len_password<=8:
+  print("Your password is vaild.")
+else:
+  print("Your password is too short, hence invalid.")
